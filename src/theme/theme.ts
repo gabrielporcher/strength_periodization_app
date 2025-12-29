@@ -1,18 +1,19 @@
 import { createTheme } from "@shopify/restyle";
 
 const palette = {
-  fieryRed: "#FF4B4B",
+  mainOrange: "#ff9c4bff",
   midnightBlack: "#1B1B1B",
   charcoalGrey: "#302E2D",
   stoneGrey: "#5C5C5C",
   pureWhite: "#FFFFFF",
+  backgroundWhite: "#FAFAFA",
   transparent: "transparent",
 };
 const theme = createTheme({
   colors: {
-    background: palette.midnightBlack,
-    primary: palette.fieryRed,
-    text: palette.pureWhite,
+    background: palette.backgroundWhite,
+    primary: palette.mainOrange,
+    text: palette.midnightBlack,
     gray1: palette.charcoalGrey,
     gray2: palette.stoneGrey,
     ...palette,

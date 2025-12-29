@@ -12,13 +12,10 @@ export default function TabLayout() {
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.gray2,
         tabBarStyle: {
-          backgroundColor: colors.background,
-          padding: 12,
-          height: 90,
+          backgroundColor: colors.charcoalGrey,
           borderTopWidth: 0,
         },
         tabBarLabelStyle: {
-          fontFamily: "PoppinsRegular",
           fontSize: 12,
           color: colors.text,
         },

@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import { Screen } from "@/src/components/Screen";
+import WeeklyProgress from "@/src/components/WeeklyProgress";
 
 export default function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>MAIN SCREEN</Text>
-    </View>
+    <Screen>
+      <WeeklyProgress week={3} />
+    </Screen>
   );
 }
