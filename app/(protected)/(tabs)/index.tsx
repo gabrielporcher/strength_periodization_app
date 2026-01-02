@@ -1,10 +1,9 @@
 import { Screen } from "@/src/components/Screen";
 import WeeklyProgress from "@/src/components/WeeklyProgress";
+import { PeriodizationRepository } from "@/src/storage/PeriodizationRepository";
 
 export default function HomeScreen() {
-  return (
-    <Screen>
-      <WeeklyProgress week={3} />
-    </Screen>
-  );
+  const program = PeriodizationRepository.getAll();
+  console.log(program);
+  return <Screen>{program[0] ? <WeeklyProgress week={3} /> : null}</Screen>;
 }

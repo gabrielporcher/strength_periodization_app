@@ -7,7 +7,7 @@ export interface Exercise {
 
 export interface ExerciseSet {
   sets: number;
-  weight: string;
+  weight: number;
   reps: number;
 }
 
